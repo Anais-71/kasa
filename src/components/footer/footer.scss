@@ -1,0 +1,36 @@
+@import '../../layout/variables';
+
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -100px;
+    margin-right: -100px;
+    padding-bottom: 29px;
+    padding-top: 66px;
+
+    .logo {
+        width: 122px;
+    }
+    
+    .copyrights {
+        color: white;
+        font-size: $big;
+        font-weight: $semi-bold;
+    }
+
+    //Mobile version
+    @media (max-width: 375px) {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        .copyrights {
+            font-size: $small;
+            width: 133.59px;
+            height: 46px;
+            text-align: center;
+        }
+    }
+}

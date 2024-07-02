@@ -1,0 +1,54 @@
+@import '../../layout/variables';
+
+.error {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    color: $red;
+    margin-bottom: 139px;
+    gap: 139px;
+
+    &__title {
+        height: 263px;
+        margin-top: 89px;
+        font-size: 18rem;
+        font-weight: $bold;
+        margin-bottom: 0px;
+    }
+
+    &__subtitle {
+        font-size: 36px;
+        margin: 0px;
+    }
+
+    &__link {
+        color: black;
+        font-size: $medium;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+//Mobile version
+@media (max-width: 375px) {
+.error {
+    &__title{
+        height: 99px;
+        font-size: 6rem;
+        gap: 113px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        width: 260px;
+        font-size: $medium;
+        font-weight: $semi-bold;
+    }
+
+    &__link {
+        font-weight: $semi-bold;
+        font-size: 0.875rem;
+    }
+}
+
+}

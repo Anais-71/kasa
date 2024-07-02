@@ -1,0 +1,31 @@
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -100px;
+  margin-right: -100px;
+  padding-bottom: 29px;
+  padding-top: 66px;
+}
+.footer .logo {
+  width: 122px;
+}
+.footer .copyrights {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+@media (max-width: 375px) {
+  .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .footer .copyrights {
+    font-size: 0.75rem;
+    width: 133.59px;
+    height: 46px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=footer.css.map */

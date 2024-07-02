@@ -1,0 +1,28 @@
+.header {
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.header .logo {
+  height: 68px;
+}
+.header .nav {
+  display: flex;
+  gap: 57px;
+}
+.header .nav .active {
+  text-decoration: underline;
+}
+@media (max-width: 375px) {
+  .header .logo {
+    width: 145px;
+  }
+  .header .nav {
+    font-size: 0.75rem;
+    gap: 26px;
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=header.css.map */

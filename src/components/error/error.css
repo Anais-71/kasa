@@ -1,0 +1,43 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FF6060;
+  margin-bottom: 139px;
+  gap: 139px;
+}
+.error__title {
+  height: 263px;
+  margin-top: 89px;
+  font-size: 18rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.error__subtitle {
+  font-size: 36px;
+  margin: 0px;
+}
+.error__link {
+  color: black;
+  font-size: 1.125rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .error__title {
+    height: 99px;
+    font-size: 6rem;
+    gap: 113px;
+  }
+  .error__subtitle {
+    text-align: center;
+    width: 260px;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  .error__link {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+}/*# sourceMappingURL=error.css.map */

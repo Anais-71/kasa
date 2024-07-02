@@ -1,0 +1,37 @@
+@import '../../layout/variables';
+
+.header {
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .logo {
+        height: 68px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 57px;
+
+        .active {
+            text-decoration: underline;
+        }
+    }
+
+    //Mobile version
+    @media (max-width: 375px) {
+
+        .logo {
+            width: 145px;
+        }
+
+        .nav {
+            font-size: $small;
+            gap: 26px;
+            text-transform: uppercase;
+        }
+    }
+}
