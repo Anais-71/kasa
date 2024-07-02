@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given my URL path is wrong The error page matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="error"
+  >
+    <h1
+      class="error__title"
+    >
+      404
+    </h1>
+    <h2
+      class="error__subtitle"
+    >
+      Oups! La page que vous demandez n'existe pas.
+    </h2>
+    <a
+      class="error__link"
+      href="my-app/public/index.html"
+    >
+      Retourner sur la page d'accueil
+    </a>
+  </div>
+</DocumentFragment>
+`;

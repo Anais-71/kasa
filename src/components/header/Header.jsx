@@ -9,11 +9,13 @@ function Header() {
             <img src={logo} alt='Kasa' className='logo' />
             <div className='nav'>
                 <NavLink to="/"
+                    data-testid="navlink-home"
                   className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active" : ""}>
                  Accueil
                 </NavLink>
                 <NavLink to="/about"
+                data-testid="navlink-about"
                   className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active" : ""}>
                 A propos

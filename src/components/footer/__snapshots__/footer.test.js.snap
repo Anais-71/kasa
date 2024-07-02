@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given I am on a page The footer page matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="footer"
+  >
+    <img
+      alt="Kasa"
+      class="logo"
+      src="logo_white.svg"
+    />
+    <div
+      class="copyrights"
+    >
+      <p>
+        © 2020 Kasa. All rights reserved
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
