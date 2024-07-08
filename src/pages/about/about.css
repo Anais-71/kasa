@@ -1,0 +1,35 @@
+.about__banner {
+  position: relative;
+  height: 223px;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-bottom: 43px;
+}
+.about__banner--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__banner--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+.about__dropdowns {
+  margin: 0 108.5px 38px;
+}
+@media (max-width: 375px) {
+  .about__banner {
+    height: 111px;
+    margin-bottom: 19px;
+  }
+  .about__dropdowns {
+    margin: 0px;
+  }
+}/*# sourceMappingURL=about.css.map */
