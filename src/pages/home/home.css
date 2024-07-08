@@ -25,10 +25,30 @@
   font-size: 3rem;
   font-weight: 700;
 }
+@media (max-width: 375px) {
+  .banner {
+    width: 335px;
+    height: 111px;
+  }
+  .banner__img {
+    width: 335px;
+  }
+  .banner__title {
+    font-size: 1.5rem;
+    text-wrap: wrap;
+    padding-left: 16px;
+  }
+}
 
 .lodging {
   background-color: #F6F6F6;
   border-radius: 25px;
   padding: 56px 50px 43px 50px;
   margin-bottom: 50px;
+}
+@media (max-width: 375px) {
+  .lodging {
+    padding: 0px;
+    background-color: white;
+  }
 }/*# sourceMappingURL=home.css.map */

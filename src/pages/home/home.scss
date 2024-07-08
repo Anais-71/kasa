@@ -28,6 +28,23 @@
         font-size: 3rem;
         font-weight: $bold;
     }
+
+    //Mobile version
+    @media (max-width: 375px) {
+        width: 335px;
+        height: 111px;
+
+        &__img {
+            width: 335px;
+        }
+
+        &__title {
+            font-size: $big;
+            text-wrap: wrap;
+            padding-left: 16px;
+        }
+
+    }
 }
 
 .lodging {
@@ -35,4 +52,10 @@
     border-radius: 25px;
     padding: 56px 50px 43px 50px;
     margin-bottom: 50px;
+
+    //Mobile version
+    @media (max-width: 375px) {
+        padding: 0px;
+        background-color: white;
+    }
 }

@@ -5,6 +5,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 60px; 
+
+    //Mobile version
+    @media (max-width: 375px) {
+        gap: 20px;
+    }
 }
 
 .card {
@@ -35,5 +40,10 @@
         width: 100%;
         height: 100%;
         background: $gradient;
+    }
+
+    //Mobile version
+    @media (max-width: 375px) {
+        height: 255px;
     }
 }

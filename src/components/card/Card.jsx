@@ -21,7 +21,7 @@ function Card() {
                 <a href={'/logement/' + item.id} className='card' key={index}>
                     <img src={item.cover} alt="image de la carte" className='card__cover'/>
                     <div className='card__overlay'></div>
-                    <p className='card__title'> {item.title} </p>
+                    <p className='card__title' data-testid='title'> {item.title} </p>
                 </a>
             ))}
         </div>
