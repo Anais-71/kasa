@@ -1,0 +1,1 @@
+// Rédiger test d'intégration

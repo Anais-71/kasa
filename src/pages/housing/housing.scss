@@ -1,0 +1,83 @@
+@import '../../layout/variables';
+
+.housing {
+
+    &__info {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        &--title {
+            height: 51px;
+            color: $red;
+            font-size: 2.25rem;
+        }
+    }
+
+    &__host {
+        position: absolute;
+        display: flex;
+        right: 100px;
+        top: 615px;
+        align-items: center;
+
+        &--name {
+            color: $red;
+            width: 93px;
+            text-wrap: wrap;
+            text-align: end;
+        }
+
+        &--picture {
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+            margin-left: 10px;
+        }
+    }
+
+    &__tags {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 24px;
+
+        &--tag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 25px;
+            background-color: $red;
+            border-radius: 10px;
+            color: white;
+            font-weight: $bold;
+            font-size: 0.875rem;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        right: 100px;
+        top: 700px;
+        width: 160px;
+        height: 36px;
+    }
+
+    &__dropdowns {
+        display: flex;
+        gap: 76px;
+        justify-content: space-between;
+    }
+}
+
+.dropdown {
+    width: 100%;
+    font-size: $medium;
+    display: flex;
+    justify-content: center;
+}
