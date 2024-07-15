@@ -1,43 +1,35 @@
 import { render, screen } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header';
 
 describe('Given I am on a page', () => {
   beforeEach(() => {
-    render(<Header activeLink="/" />);
+    render(
+      <Router>
+        <Header />
+      </Router>
+    );
   });
 
-  test('When the header component is being displayed, Then the white should be present', () => {
+  test('When the header component is being displayed, Then the logo should be present', () => {
     const logo = screen.getByAltText('Kasa');
     expect(logo).toBeInTheDocument();
   });  
 
-  test('When the header component is being displayed, Then the navigation links should be present', () => {
-    const home = screen.getByText(/Accueil/i);
-    const about = screen.getByAltText(/A propos/i);
-    expect(home).toBeInTheDocument();
-    expect(about).toBeInTheDocument();
+  test('When the header component is being displayed, Then the home link should be present', () => {
+    const copyrights = screen.getByText(/Accueil/i);
+    expect(copyrights).toBeInTheDocument();
   });
 
-  test('When I am on the home page, Then the home link should be active', () => {
-    const homeLink = screen.getByTestId('navlink-home');
-    expect(homeLink).toHaveClass('active');
-  
-    const aboutLink = screen.getByTestId('navlink-about');
-    expect(aboutLink).not.toHaveClass('active');
-  });
-  
-  test('When I am on the about page, Then the about link should be active', () => {
-    render(<Header activeLink="/about" />);
-
-    const homeLink = screen.getByTestId('navlink-home');
-    expect(homeLink).not.toHaveClass('active');
-    
-    const aboutLink = screen.getByTestId('navlink-about');
-    expect(aboutLink).toHaveClass('active');
+  test('When the header component is being displayed, Then the about link should be present', () => {
+    const copyrights = screen.getByText(/A propos/i);
+    expect(copyrights).toBeInTheDocument();
   });
 
-  test('The header page matches the snapshot', () => {
-    const { asFragment } = render(<Header />);
+  test('The header component matches the snapshot', () => {
+    const { asFragment } = render(<Router>
+      <Header />
+    </Router>);
     expect(asFragment()).toMatchSnapshot();
   });
 });

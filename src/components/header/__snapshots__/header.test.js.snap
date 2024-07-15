@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given I am on a page The header component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="header"
+  >
+    <img
+      alt="Kasa"
+      class="logo"
+      src="logo.svg"
+    />
+    <div
+      class="nav"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        data-testid="navlink-home"
+        href="/"
+      >
+        Accueil
+      </a>
+      <a
+        class=""
+        data-testid="navlink-about"
+        href="/about"
+      >
+        A propos
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
