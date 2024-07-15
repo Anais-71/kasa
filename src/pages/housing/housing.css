@@ -7,7 +7,6 @@
   margin-bottom: 20px;
 }
 .housing__info--title {
-  height: 51px;
   color: #FF6060;
   font-size: 2.25rem;
 }
@@ -60,6 +59,7 @@
   display: flex;
   gap: 76px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .dropdown {
