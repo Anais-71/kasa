@@ -8,7 +8,9 @@ import Footer from './components/footer/Footer'
 import Error from './components/error/Error'
 
 //Pages
-import Home from './pages/Home';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Housing from './pages/housing/Housing';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/logement/:id' element={<Housing />} /> 
           <Route path='*' element={<Error />} />
         </Routes>
         <Footer />

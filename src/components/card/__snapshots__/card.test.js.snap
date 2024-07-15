@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given I am on the home page The card matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="lodges"
+  />
+</DocumentFragment>
+`;
+
+exports[`Given I am on the home page The dropdown page matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="lodges"
+  />
+</DocumentFragment>
+`;
