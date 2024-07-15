@@ -1,11 +1,14 @@
-@import '../../layout/variables';
+@import '../../assets/style/variables';
 
 .dropdown {
+    position: relative;
     display: flex;
     flex-direction: column;
     font-size: $big;
     color: white;
+    background-color: $background;
     margin-bottom: 30px;
+    border-radius: 5px;
 
     &__title {
         display: flex;
@@ -22,8 +25,8 @@
             font-size: $big;
             color: white;
             display: flex;
-        justify-content: space-between;
-        padding-right: 20px;
+            justify-content: space-between;
+            padding-right: 20px;
         }
 
         &--click {
@@ -33,17 +36,20 @@
     }
 
     &__content {
-        border-radius: 5px;
-        background-color: $background;
-        height: 100%;
         color: black;
         font-size: $medium;
         font-weight: $normal;
         list-style-type: none;
-        padding: 30px 20px 20px;
-        margin-top: -5px;
-        margin-bottom: 0px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+        padding: 0px 20px;
+        max-height: 0;
     }
+    
+    &__content.open {
+        max-height: 100vh;
+        padding: 30px 20px 20px;
+    }       
 
     //Mobile version
     @media (max-width: 375px) {
@@ -51,15 +57,24 @@
         &__title {
             height: 30px;
         
-        &--txt {
-            font-size: $small;
-            padding-right: 0px;
+            &--txt {
+                font-size: $small;
+                padding-right: 0px;
+            }
         }
-    }
         &__content {
             font-size: $small;
             padding-top: 13px;
         }
-    
     }
 }
+
+.chevron {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(-180deg);
+  }
+  
+  .chevron.open {
+    transform: rotate(0deg);
+  }
