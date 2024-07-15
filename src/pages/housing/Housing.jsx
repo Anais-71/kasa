@@ -34,7 +34,7 @@ function Housing() {
                     </div>
                     <div className="housing__host">
                         <div className="housing__host--name">{item.host && item.host.name}</div>
-                        <img className="housing__host--picture" src={item.host && item.host.picture} />
+                        <img className="housing__host--picture" src={item.host && item.host.picture} alt={item.host && item.host.name}/>
                     </div>
                     <div className="housing__tags">
                         {item.tags && item.tags.map((tag, i) => (

@@ -3,7 +3,6 @@ import logo from '../../assets/logo.svg'
 import './header.css'
 
 function Header() {
-    const title = 'Kasa'
     return (
         <div className='header'>
             <img src={logo} alt='Kasa' className='logo' />

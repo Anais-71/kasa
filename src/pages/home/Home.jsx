@@ -14,7 +14,7 @@ function Home() {
                 <div className="banner__overlay">
                     <p className='banner__title'>Chez vous, partout et ailleurs</p>
                 </div>
-                <img src={background} alt="image de falaises" className="banner_img"></img>
+                <img src={background} alt="falaises" className="banner_img"></img>
             </div>
             <div className="lodging">
                 <Card />

@@ -19,7 +19,7 @@ function Card() {
         <div className='lodges'>
             {data.map((item, index) => (
                 <a href={'/logement/' + item.id} className='card' key={index}>
-                    <img src={item.cover} alt="image de la carte" className='card__cover'/>
+                    <img src={item.cover} alt="logement" className='card__cover'/>
                     <div className='card__overlay'></div>
                     <p className='card__title' data-testid='title'> {item.title} </p>
                 </a>

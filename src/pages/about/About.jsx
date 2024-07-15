@@ -16,7 +16,7 @@ function About() {
         <div className='about__banner'>
             <div className="about__banner--overlay">
              </div>
-            <img src={background} alt="photo d'une chaîne de montagne entourant un lac" className="about__banner--img"></img>
+            <img src={background} alt="chaîne de montagne entourant un lac" className="about__banner--img"></img>
         </div>
 
         <div className='about__dropdowns'>
