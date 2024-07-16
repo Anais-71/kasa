@@ -44,11 +44,13 @@
         transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
         padding: 0px 20px;
         max-height: 0;
+        display: none;
     }
     
     &__content.open {
         max-height: 100vh;
         padding: 30px 20px 20px;
+        display: block;
     }       
 
     //Mobile version

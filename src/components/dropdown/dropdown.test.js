@@ -11,27 +11,21 @@ describe('Given I am on a page', () => {
   });  
 
   test('When the dropdown component is being displayed, Then the dropdown toggles on click', () => {
-    const { getByText, queryByText, container } = render(<Dropdown title={title} items={items} />);
-
-    items.forEach(item => {
-      expect(queryByText(item)).not.toBeInTheDocument();
-    });
-
+    const { container } = render(<Dropdown title={title} items={items} />);
+  
+    expect(container.querySelector('.dropdown__content')).not.toHaveClass('open');
+  
     fireEvent.click(container.querySelector('.dropdown__title--click'));
-
-    items.forEach(item => {
-      expect(getByText(item)).toBeInTheDocument();
-    });
-
+  
+    expect(container.querySelector('.dropdown__content')).toHaveClass('open');
+  
     fireEvent.click(container.querySelector('.dropdown__title--click'));
-
-    items.forEach(item => {
-      expect(queryByText(item)).not.toBeInTheDocument();
-    });
+  
+    expect(container.querySelector('.dropdown__content')).not.toHaveClass('open');
   });
-
+  
   test('The dropdown page matches the snapshot', () => {
-    const { asFragment } = render(<Dropdown />);
+    const { asFragment } = render(<Dropdown title={title} items={items} />);
     expect(asFragment()).toMatchSnapshot();
-  });
+  });  
 });

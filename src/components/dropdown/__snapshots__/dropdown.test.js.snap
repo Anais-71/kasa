@@ -12,8 +12,9 @@ exports[`Given I am on a page The dropdown page matches the snapshot 1`] = `
       <h2
         class="dropdown__title--txt"
       >
+        Test title
         <span
-          class="dropdown__title--click chevron open"
+          class="dropdown__title--click chevron "
         >
           <svg
             fill="currentColor"
@@ -33,7 +34,17 @@ exports[`Given I am on a page The dropdown page matches the snapshot 1`] = `
     </div>
     <div
       class="dropdown__content "
-    />
+    >
+      <li>
+        Item 1
+      </li>
+      <li>
+        Item 2
+      </li>
+      <li>
+        Item 3
+      </li>
+    </div>
   </div>
 </DocumentFragment>
 `;

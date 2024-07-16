@@ -12,7 +12,7 @@ function Dropdown({ title, items }) {
       <div className='dropdown__title'>
         <h2 className='dropdown__title--txt'>
           {title}
-          <span className={`dropdown__title--click chevron ${isOpen ? '' : 'open'}`} onClick={toggleOpen}>
+          <span className={`dropdown__title--click chevron ${isOpen ? 'open' : ''}`} onClick={toggleOpen}>
             <FaChevronUp />
           </span>
         </h2>
@@ -25,5 +25,6 @@ function Dropdown({ title, items }) {
     </div>
   );
 }
+
 
 export default Dropdown;
