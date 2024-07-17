@@ -28,11 +28,18 @@
 @media (max-width: 375px) {
   .gallery {
     height: 255px;
+    margin-bottom: 15px;
+    border-radius: 10px;
   }
-  .gallery__prev {
-    height: 19.8px;
+  .gallery__prev svg {
+    width: 11.67px !important;
+    height: 19.8px !important;
   }
-  .gallery__next {
-    width: 11.67px;
+  .gallery__next svg {
+    width: 11.67px !important;
+    height: 19.8px !important;
+  }
+  .gallery__counter {
+    display: none;
   }
 }/*# sourceMappingURL=gallery.css.map */

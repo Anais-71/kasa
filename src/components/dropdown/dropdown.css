@@ -39,10 +39,12 @@
   transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
   padding: 0px 20px;
   max-height: 0;
+  display: none;
 }
 .dropdown__content.open {
   max-height: 100vh;
   padding: 30px 20px 20px;
+  display: block;
 }
 @media (max-width: 375px) {
   .dropdown {
@@ -53,11 +55,14 @@
   }
   .dropdown__title--txt {
     font-size: 0.75rem;
-    padding-right: 0px;
+    padding-right: 10px;
   }
   .dropdown__content {
     font-size: 0.75rem;
     padding-top: 13px;
+  }
+  .dropdown__content.open {
+    padding: 13px 20px 20px;
   }
 }
 
@@ -66,7 +71,18 @@
   transition: transform 0.3s ease-in-out;
   transform: rotate(-180deg);
 }
+@media (max-width: 375px) {
+  .chevron {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+}
 
 .chevron.open {
   transform: rotate(0deg);
+}
+@media (max-width: 375px) {
+  .chevron.open {
+    transform: rotate(180deg);
+  }
 }/*# sourceMappingURL=dropdown.css.map */

@@ -61,6 +61,52 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 375px) {
+  .housing__info {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .housing__info--title {
+    font-size: 1.125rem;
+    text-wrap: wrap;
+    padding-bottom: 5px;
+    line-height: 25px;
+  }
+  .housing__info--location {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .housing__tags--tag {
+    width: 100px;
+    height: 20px;
+    font-size: 0.625rem;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 62px;
+  }
+  .housing__host {
+    right: 20.5px;
+    top: 532px;
+  }
+  .housing__host--name {
+    font-size: 0.75rem;
+  }
+  .housing__host--picture {
+    width: 32px;
+    height: 32px;
+  }
+  .housing__rating {
+    width: 98px;
+    height: 18px;
+    left: 20px;
+    top: 535px;
+    gap: 5px;
+  }
+  .housing__dropdowns {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
 
 .dropdown {
   width: 100%;

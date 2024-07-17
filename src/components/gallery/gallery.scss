@@ -1,45 +1,53 @@
 @import '../../assets/style/variables';
 
 .gallery {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 415px;
-    border-radius: 25px;
-    margin-bottom: 30px;
-    object-fit: cover;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  overflow: hidden;
 
-    &__prev {
-        color: white;
-        position:absolute;
-        left: 24px;
+  &__prev {
+    color: white;
+    position: absolute;
+    left: 24px;
+  }
+
+  &__next {
+    color: white;
+    position: absolute;
+    right: 24px;
+  }
+
+  &__counter {
+    color: white;
+    position: absolute;
+    bottom: 25px;
+  }
+
+  //Mobile version
+  @media (max-width: 375px) {
+    height: 255px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+    &__prev svg {
+      width: 11.67px !important;
+      height: 19.8px !important;
     }
 
-    &__next {
-        color: white;
-        position:absolute;
-        right: 24px;
+    &__next svg {
+      width: 11.67px !important;
+      height: 19.8px !important;
     }
 
     &__counter {
-        color: white;
-        position: absolute;
-        bottom: 25px;
+      display: none;
     }
-
-    //Mobile version
-    @media (max-width: 375px) {
-        height: 255px;
-
-        &__prev{
-            height: 19.8px;
-        }
-
-        &__next {
-            width: 11.67px;
-        }
-    }
+  }
 }

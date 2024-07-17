@@ -1,82 +1,99 @@
 @import '../../assets/style/variables';
 
 .dropdown {
-    position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: $big;
+  color: white;
+  background-color: $background;
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+  &__title {
     display: flex;
-    flex-direction: column;
-    font-size: $big;
-    color: white;
-    background-color: $background;
-    margin-bottom: 30px;
+    align-items: center;
+    height: 52px;
+    padding-left: 15px;
+    background-color: $red;
     border-radius: 5px;
+    margin-bottom: 0px;
+    z-index: 10;
 
+    &--txt {
+      width: 100%;
+      font-size: $big;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 20px;
+    }
+
+    &--click {
+      color: white;
+      width: 32px;
+    }
+  }
+
+  &__content {
+    color: black;
+    font-size: $medium;
+    font-weight: $normal;
+    list-style-type: none;
+    overflow: hidden;
+    transition:
+      max-height 0.3s ease-in-out,
+      padding 0.3s ease-in-out;
+    padding: 0px 20px;
+    max-height: 0;
+    display: none;
+  }
+
+  &__content.open {
+    max-height: 100vh;
+    padding: 30px 20px 20px;
+    display: block;
+  }
+
+  //Mobile version
+  @media (max-width: 375px) {
+    margin-bottom: 20px;
     &__title {
-        display: flex;
-        align-items: center;
-        height: 52px;
-        padding-left: 15px;
-        background-color: $red;
-        border-radius: 5px;
-        margin-bottom: 0px;
-        z-index: 10;
+      height: 30px;
 
-        &--txt {
-            width: 100%;
-            font-size: $big;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            padding-right: 20px;
-        }
-
-        &--click {
-            color: white;
-            width: 32px;
-        }
+      &--txt {
+        font-size: $small;
+        padding-right: 10px;
+      }
     }
-
     &__content {
-        color: black;
-        font-size: $medium;
-        font-weight: $normal;
-        list-style-type: none;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-        padding: 0px 20px;
-        max-height: 0;
-        display: none;
+      font-size: $small;
+      padding-top: 13px;
     }
-    
-    &__content.open {
-        max-height: 100vh;
-        padding: 30px 20px 20px;
-        display: block;
-    }       
 
-    //Mobile version
-    @media (max-width: 375px) {
-        margin-bottom: 20px;
-        &__title {
-            height: 30px;
-        
-            &--txt {
-                font-size: $small;
-                padding-right: 0px;
-            }
-        }
-        &__content {
-            font-size: $small;
-            padding-top: 13px;
-        }
+    &__content.open {
+      padding: 13px 20px 20px;
     }
+  }
 }
 
 .chevron {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
-    transform: rotate(-180deg);
-  }
-  
-  .chevron.open {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-180deg);
+
+  //Mobile version
+  @media (max-width: 375px) {
     transform: rotate(0deg);
+    transform-origin: center;
   }
+}
+
+.chevron.open {
+  transform: rotate(0deg);
+
+  //Mobile version
+  @media (max-width: 375px) {
+    transform: rotate(180deg);
+  }
+}
