@@ -29,4 +29,17 @@
         position: absolute;
         bottom: 25px;
     }
+
+    //Mobile version
+    @media (max-width: 375px) {
+        height: 255px;
+
+        &__prev{
+            height: 19.8px;
+        }
+
+        &__next {
+            width: 11.67px;
+        }
+    }
 }

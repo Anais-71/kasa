@@ -37,7 +37,7 @@ function Gallery() {
             {images.length > 1 && (
                 <FaChevronLeft className="gallery__prev" onClick={goPrev} size={79}/>
             )}
-            <img className='gallery__img' src={images[currentIndex]} alt="" />
+            <img className='gallery__img' src={images.length > 0 ? images[currentIndex] : 'default.jpg'} alt="Logement" />
             {images.length > 1 && (
                 <FaChevronRight className="gallery__next" onClick={goNext} size={79}/>
             )}
