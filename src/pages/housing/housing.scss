@@ -93,21 +93,25 @@
 
     &__tags {
       &--tag {
+        position: relative;
         width: 100px;
         height: 20px;
         font-size: 0.625rem;
         font-weight: $semi-bold;
         border-radius: 5px;
-        margin-bottom: 62px;
+        margin-bottom: 16px;
       }
     }
 
     &__host {
+      position: absolute;
       right: 20.5px;
-      top: 532px;
+      top: 490px;
+      margin-bottom: 15px;
 
       &--name {
         font-size: $small;
+        max-width: 80px;
       }
 
       &--picture {
@@ -120,11 +124,12 @@
       width: 98px;
       height: 18px;
       left: 20px;
-      top: 535px;
+      top: 495px;
       gap: 5px;
     }
 
     &__dropdowns {
+      margin-top: 15px;
       flex-direction: column;
       gap: 0px;
     }

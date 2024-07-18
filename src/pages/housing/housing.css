@@ -77,19 +77,23 @@
     font-weight: 500;
   }
   .housing__tags--tag {
+    position: relative;
     width: 100px;
     height: 20px;
     font-size: 0.625rem;
     font-weight: 500;
     border-radius: 5px;
-    margin-bottom: 62px;
+    margin-bottom: 16px;
   }
   .housing__host {
+    position: absolute;
     right: 20.5px;
-    top: 532px;
+    top: 490px;
+    margin-bottom: 15px;
   }
   .housing__host--name {
     font-size: 0.75rem;
+    max-width: 80px;
   }
   .housing__host--picture {
     width: 32px;
@@ -99,10 +103,11 @@
     width: 98px;
     height: 18px;
     left: 20px;
-    top: 535px;
+    top: 495px;
     gap: 5px;
   }
   .housing__dropdowns {
+    margin-top: 15px;
     flex-direction: column;
     gap: 0px;
   }

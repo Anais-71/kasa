@@ -11,17 +11,26 @@
   margin-bottom: 30px;
   object-fit: cover;
   overflow: hidden;
+  background-color: $red;
+
+  img {
+    width: 100%;
+  }
 
   &__prev {
     color: white;
     position: absolute;
     left: 24px;
+    height: 79px;
+    width: 79px;
   }
 
   &__next {
     color: white;
     position: absolute;
     right: 24px;
+    height: 79px;
+    width: 79px;
   }
 
   &__counter {
@@ -36,14 +45,19 @@
     margin-bottom: 15px;
     border-radius: 10px;
 
-    &__prev svg {
-      width: 11.67px !important;
-      height: 19.8px !important;
+    img {
+      height: 100%;
+      object-fit: cover;
     }
 
-    &__next svg {
-      width: 11.67px !important;
-      height: 19.8px !important;
+    &__prev {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__next {
+      width: 24px;
+      height: 24px;
     }
 
     &__counter {

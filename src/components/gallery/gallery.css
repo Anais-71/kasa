@@ -9,16 +9,24 @@
   margin-bottom: 30px;
   object-fit: cover;
   overflow: hidden;
+  background-color: #FF6060;
+}
+.gallery img {
+  width: 100%;
 }
 .gallery__prev {
   color: white;
   position: absolute;
   left: 24px;
+  height: 79px;
+  width: 79px;
 }
 .gallery__next {
   color: white;
   position: absolute;
   right: 24px;
+  height: 79px;
+  width: 79px;
 }
 .gallery__counter {
   color: white;
@@ -31,13 +39,17 @@
     margin-bottom: 15px;
     border-radius: 10px;
   }
-  .gallery__prev svg {
-    width: 11.67px !important;
-    height: 19.8px !important;
+  .gallery img {
+    height: 100%;
+    object-fit: cover;
   }
-  .gallery__next svg {
-    width: 11.67px !important;
-    height: 19.8px !important;
+  .gallery__prev {
+    width: 24px;
+    height: 24px;
+  }
+  .gallery__next {
+    width: 24px;
+    height: 24px;
   }
   .gallery__counter {
     display: none;
