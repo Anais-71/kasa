@@ -17,7 +17,7 @@ exports[`Given my URL path is wrong The error page matches the snapshot 1`] = `
     </h2>
     <a
       class="error__link"
-      href="my-app/public/index.html"
+      href="/"
     >
       Retourner sur la page d'accueil
     </a>

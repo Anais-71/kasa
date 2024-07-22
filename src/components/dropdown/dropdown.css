@@ -39,12 +39,10 @@
   transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
   padding: 0px 20px;
   max-height: 0;
-  display: none;
 }
 .dropdown__content.open {
   max-height: 100vh;
   padding: 30px 20px 20px;
-  display: block;
 }
 @media (max-width: 375px) {
   .dropdown {
@@ -83,6 +81,6 @@
 }
 @media (max-width: 375px) {
   .chevron.open {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
   }
 }/*# sourceMappingURL=dropdown.css.map */
