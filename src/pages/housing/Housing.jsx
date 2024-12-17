@@ -18,7 +18,6 @@ function Housing() {
     const dataJson = await fetchData()
     const dataItem = dataJson.find((item) => item.id === id)
     setData(dataItem ? [dataItem] : [])
-    console.log(dataItem)
     if (!dataItem) {
       console.log('if', dataItem)
       navigate('/404')

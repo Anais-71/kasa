@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaChevronUp } from 'react-icons/fa'
+import PropTypes from 'prop-types'
 import './dropdown.css'
 
 function Dropdown({ title, items }) {
@@ -27,6 +28,11 @@ function Dropdown({ title, items }) {
       </div>
     </div>
   )
+}
+
+Dropdown.propTypes = {
+  title: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired,
 }
 
 export default Dropdown
